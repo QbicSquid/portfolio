@@ -1,0 +1,11 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "indent": ["warn", 2],
+    "quotes": ["warn", "single"],
+    "comma-dangle": ["warn", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "arrow-parens": ["warn", "as-needed"],
+    "semi": ["warn", "never"]
+  }
+}
