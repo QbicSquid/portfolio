@@ -1,6 +1,7 @@
 html,
 body,
-#__next {
+#__next,
+.container {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -40,4 +41,12 @@ body,
   0% {
     box-shadow: 0 0 0rem #000, 0 0 0rem #fe8019;
   }
+}
+
+.meascii {
+  background-color: #282828;
+  color: #fabd2f;
+  font-size: 3px;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
