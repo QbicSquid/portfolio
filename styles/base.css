@@ -45,8 +45,11 @@ body,
 
 .meascii {
   background-color: #282828;
-  color: #fabd2f;
   font-size: 3px;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.meascii-color {
+  color: #fabd2f;
 }
