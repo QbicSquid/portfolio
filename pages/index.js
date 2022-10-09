@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-<div>
+    <div>
       <p>Welcome to Next.js!!</p>
     </div>
   )
