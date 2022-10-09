@@ -1,0 +1,43 @@
+html,
+body,
+#__next {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-gruvd-bg {
+  background-color: #282828;
+}
+
+.bg-gruvd-bg0_h {
+  background-color: #1d2021;
+}
+
+.border-gruvd-orange2 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 132 25 / var(--tw-border-opacity));
+}
+
+.text-gruvd-yellow2 {
+  --tw-text-opacity: 1;
+  color: rgb(250 189 47 / var(--tw-text-opacity));
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.shadow-gruvd-orange2 {
+  animation: shadowPulse 1.5s infinite alternate;
+  box-shadow: 0 0 1rem #000, 0 0 1.2rem #fe8019, 0 0 0 #000;
+}
+
+@keyframes shadowPulse {
+  100% {
+    box-shadow: 0 0 1rem #000, 0 0 1.2rem #fe8019;
+  }
+
+  0% {
+    box-shadow: 0 0 0rem #000, 0 0 0rem #fe8019;
+  }
+}
