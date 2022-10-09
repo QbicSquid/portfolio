@@ -1,9 +1,7 @@
+import TextTyper from '../components/console/TextTyper'
+
 function HomePage() {
-  return (
-    <div>
-      <p>Welcome to Next.js!!</p>
-    </div>
-  )
+  return <TextTyper text="Hello World!" />
 }
 
 export default HomePage
