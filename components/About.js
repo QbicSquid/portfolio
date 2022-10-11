@@ -1,12 +1,19 @@
+import { useContext, useEffect } from 'react'
+
 import TextTyper from './console/TextTyper'
 import MeAscii from './console/MeAscii'
 import Selector from './console/Selector'
+import SelectionContext from './context/SelectionContext'
+import { selectionOpt } from './console/Selector'
 
 export const getStaticProps = () => {
   return {}
 }
 
+// TODO: turn all the <br/>'s into mt's
 const About = () => {
+  const selectionContext = useContext(SelectionContext)
+
   return (
     <div className="container flex">
       <div className="container">
@@ -29,7 +36,13 @@ const About = () => {
         <p className="inline text-gruvd-yellow2">~/about$ {'>'} ls</p>
         <br />
         <p className="inline text-gruvd-yellow2">Select An Option:</p>
+        <br />
+        <br />
         <Selector />
+        <br />
+        <br />
+      <p className={'inline mr-3 text-gruvd-yellow2 ' + (!(selectionContext.enter) && ' hidden')}>~/about$ {'>'}</p>
+      {selectionContext.enter && <TextTyper keydelay={70}>{'clear; cd ~/' + selectionOpt[selectionContext.selection].name}</TextTyper> }
       </div>
       <div className="flex-wrap">
         <MeAscii />

@@ -1,3 +1,10 @@
 import { createContext } from "react"
 
-export const SelectionContext = createContext(0)
+const SelectionContext = createContext({
+  selection: 0,
+  enter: false,
+  setSelection: () => {},
+  setEnter: () => {},
+})
+
+export default SelectionContext
