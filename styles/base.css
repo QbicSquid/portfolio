@@ -45,7 +45,9 @@ body,
 
 .meascii {
   background-color: #282828;
-  font-size: 4px;
+  font-size: 6px;
+  transform: scale(0.9, 1);
+  line-height: 0.9;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
